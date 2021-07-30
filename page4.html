@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="page1.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="20210730_153504.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="authors.html">AUHTORS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+               </div>
+
+               <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+            </nav>
+            
+        </section>
+</head>
+<body><section class="destinations">
+
+    <h1>The Story of An Hour</h1>
+    <h3>Kate Chopin</h3>
+    <h3>continues</h3>
+
+<p>
+    Josephine was kneeling before the closed door with her lips to the keyhole, imploring for admission. "Louise, open the door! I beg; open the door--you will make yourself ill. What are you doing, Louise? For heaven's sake open the door."
+
+"Go away. I am not making myself ill." No; she was drinking in a very elixir of life through that open window.
+
+Her fancy was running riot along those days ahead of her. Spring days, and summer days, and all sorts of days that would be her own. She breathed a quick prayer that life might be long. It was only yesterday she had thought with a shudder that life might be long.
+
+She arose at length and opened the door to her sister's importunities. There was a feverish triumph in her eyes, and she carried herself unwittingly like a goddess of Victory. She clasped her sister's waist, and together they descended the stairs. Richards stood waiting for them at the bottom.
+
+Someone was opening the front door with a latchkey. It was Brently Mallard who entered, a little travel-stained, composedly carrying his grip-sack and umbrella. He had been far from the scene of the accident, and did not even know there had been one. He stood amazed at Josephine's piercing cry; at Richards' quick motion to screen him from the view of his wife.
+
+When the doctors came they said she had died of heart disease--of the joy that kills.
+</p>
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right="0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>

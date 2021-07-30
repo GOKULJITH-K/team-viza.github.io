@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="classic.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="20210730_153504.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="authors.html">AUTHORS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+               </div>
+
+               <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+            </nav>
+            
+        </section>
+        <section class="destinations">
+        <h1>SHORT STORIES</h1>
+        <p>A short story is a piece of prose fiction that typically can be read in one sitting and focuses on a self-contained incident or series
+             of linked incidents, with the intent of evoking a single effect or mood.</p>
+        </section>   
+        <section class="photos">
+            <div class="row">
+                  <div class="photos-col">
+                    <img src="1.jpg">
+                      <div class="layer">
+                        <a href="page1.html"><h3>A Defenseless Creature</h3></a>
+                      </div>
+                  </div>
+                  <div class="photos-col">
+                     <img src="1.jpg">
+                        <div class="layer">
+                        <a href="page3.html"><h3>The Story of An Hour</h3></a>
+                        </div>    
+                
+                  </div>
+                <div class="photos-col">
+                    <img src="1.jpg">
+                    <div class="layer">
+                        <a href="page5.html"><h3>An Occurrence at Owl Creek Bridge</h3></a>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+       <script>
+             var navLinks=document.getElementById("navLinks");
+             function showMenu()
+             {
+                 navLinks.style.right="0";
+             }
+             function hideMenu()
+             {
+                 navLinks.style.right="-200px";
+             }
+         </script>
+         </body>
+
+</html>
