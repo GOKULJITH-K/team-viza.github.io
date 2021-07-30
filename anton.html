@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="authors.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     </head>
+     <body>
+         <section class="header">
+             <nav>
+                 <a href="index.html"><img src="20210730_153504.png"></a>
+                 <div class="nav-links" id="navLinks">
+                    <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="">ABOUT</a></li>
+                     <li><a href="books.html">BOOKS</a></li>
+                     <li><a href="authors.html">AUTHORS</a></li>
+                     <li><a href="">CONTACT</a></li>
+                 </ul>
+                </div>
+
+                <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+             </nav>
+             <section class="testimonial">
+                <h1>AUTHOR</h1>
+                <div class="row">
+                        <div class="testimonial-col">
+                            <img src="ANTON.jpg">
+                            <div>
+                                <p>
+                                    Anton Pavlovich Chekhov 29 January 1860 – 15 July 1904 was a Russian playwright and
+                                     short-story writer who is considered to be among the greatest writers of short fiction in history.
+                                      His career as a playwright produced four classics, and his best short stories are held in high esteem by writers and critics.
+                                      Along with Henrik Ibsen and August Strindberg, Chekhov is often referred to as one of the three seminal figures in the birth of 
+                                      early modernism in the theatre.Chekhov practiced as a medical doctor throughout most of his literary career:
+                                       "Medicine is my lawful wife", he once said, "and literature is my mistress."
+
+Chekhov renounced the theatre after the reception of The Seagull in 1896, but the play was revived to
+ acclaim in 1898 by Konstantin Stanislavski's Moscow Art Theatre, which subsequently also produced Chekhov's Uncle
+  Vanya and premiered his last two plays, Three Sisters and The Cherry Orchard. These four works present a challenge
+   to the acting ensemble as well as to audiences, because in place of conventional action Chekhov offers a "theatre of mood"
+    and a "submerged life in the text".
+
+Chekhov had at first written stories to earn money,
+ but as his artistic ambition grew, he made formal innovations which have influenced the evolution of the modern short story.
+  He made no apologies for the difficulties this posed to readers, insisting that the role of an artist was to ask questions,
+   not to answer them.
+                                </p>
+                                <h3>ANTON CHEKHOV</h3>
+    
+                            </div>
+                        </div>
+                </div>
+
+            </section>
+     <script>
+         var navLinks=document.getElementById("navLinks");
+         function showMenu()
+         {
+             navLinks.style.right="0";
+         }
+         function hideMenu()
+         {
+             navLinks.style.right="-200px";
+         }
+     </script>
+
+ </body>
+</html>
