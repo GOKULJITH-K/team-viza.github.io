@@ -31,7 +31,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color:white;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     font-size: 13px;
 }
@@ -39,7 +39,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background: #f44336;
+    background:white;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -117,8 +117,8 @@ h3{
     cursor: pointer;
 }
 .hero-btn:hover{
-    border:1px solid #f44336;
-    background: #f44336;
+    border:1px solid white;
+    background:white;
     transition: 1s;
 }
 nav .bi{
@@ -135,7 +135,7 @@ nav .bi{
     }
     .nav-links{
         position: absolute;
-        background: #f44336;
+        background: rgb(27, 17, 39);
         height: 100vh;
         width: 200px;
         top:0;
