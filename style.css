@@ -33,7 +33,7 @@ nav img{
     position: relative;
 }
 .nav-links ul li a{
-    color: rgb(244, 249, 255);
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 13px;
 }
@@ -41,7 +41,7 @@ nav img{
     content: '';
     width: 0%;
     height: 2px;
-    background:#fff;
+    background:rgb(30, 24, 46);
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -98,7 +98,7 @@ nav .bi{
     }
     .nav-links{
         position: absolute;
-        background: rgb(255, 255, 255);
+        background: rgb(31, 21, 48);
         height: 100vh;
         width: 200px;
         top:0;
@@ -114,8 +114,7 @@ nav .bi{
         margin: 10px;
         font-size 22px;
         cursor: pointer;
-        
-}
+        }
 .nav-links ul{
     padding: 30px;
 }
@@ -263,7 +262,7 @@ h3{
     padding-top: 100px;
 }
 .blog-col{
-    flex-basis: 30%;
+    flex-basis: 20%;
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: left;
