@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="page1.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="20210730_153504.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="authors.html">AUHTORS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+               </div>
+
+               <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+            </nav>
+            
+        </section>
+</head>
+<body><section class="destinations">
+
+    <h1>A Defenseless Creature</h1>
+    <a href="anton.html"><h3>Anton Chekhov</h3></a>
+   
+    <div class="text-box">
+        <a href="page12.html" class="hero-btn">NEXT PAGE</a>
+
+    </div>
+    </section>
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>

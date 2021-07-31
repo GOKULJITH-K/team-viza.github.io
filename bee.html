@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="bee.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     </head>
+     <body>
+         <section class="header">
+             <nav>
+                 <a href="index.html"><img src="20210730_153504.png"></a>
+                 <div class="nav-links" id="navLinks">
+                    <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="">ABOUT</a></li>
+                     <li><a href="books.html">BOOKS</a></li>
+                     <li><a href="authors.html">AUTHORS</a></li>
+                     <li><a href="">CONTACT</a></li>
+                 </ul>
+                </div>
+
+                <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+             </nav>
+            </section>
+            <section class="destinations">
+                <h1>BASIC OF ELECTRICAL ENGINEERING</h1>
+                <p></p>
+                   <div class="row">
+                       <div class="destination-col">
+                           <h3></h3>
+                           <p>Let A = area of X-section of the wire<br>
+                            n = electron density i.e number of
+                            free electrons per unit volume<br>
+                            e = charge on each electron<br>
+                            vd = drift velocity of free electrons
+                            <br>
+                            I = n e A vd
+                            <br>
+                            Since A, n and e are constant<br> I ∝ vd<br>
+                            Hence, current flowing through a conductor is directly proportional to the drift velocity of free
+                            electrons.
+
+                           </p>
+                           
+                       </div>
+                       <div class="destination-col">
+                           <h3></h3>
+                           <p>The current density J is defined as current per unit area and is given by <br>
+                            Current density, J = I/A=neVd/A
+                            <br> J=neVd<br>
+                    
+                            The SI unit of current density is amperes/m2
+                            
+
+                           </p>
+                           
+                       </div>
+                       <div class="destination-col">
+                           <h3></h3>
+                           
+                       </div>
+                   </div>
+                   </section>
+            <script>
+                var navLinks=document.getElementById("navLinks");
+                function showMenu()
+                {
+                    navLinks.style.right="0";
+                }
+                function hideMenu()
+                {
+                    navLinks.style.right="-200px";
+                }
+            </script>
+   
+        </body>
+   </html>
