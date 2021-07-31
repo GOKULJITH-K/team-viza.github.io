@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="authors.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+     </head>
+     <body>
+         <section class="header">
+             <nav>
+                 <a href="index.html"><img src="20210730_153504.png"></a>
+                 <div class="nav-links" id="navLinks">
+                    <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                 <ul>
+                     <li><a href="index.html">HOME</a></li>
+                     <li><a href="">ABOUT</a></li>
+                     <li><a href="books.html">BOOKS</a></li>
+                     <li><a href="authors.html">AUTHORS</a></li>
+                     <li><a href="">CONTACT</a></li>
+                 </ul>
+                </div>
+
+                <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+             </nav>
+             <section class="testimonial">
+                <h1>AUTHOR</h1>
+                <div class="row">
+                        <div class="testimonial-col">
+                            <img src="KATE.jpg">
+                            <div>
+                                <p>
+                                    Sir Arthur Ignatius Conan Doyle  was a British writer and physician.
+                                     He created the character Sherlock Holmes in 1887 for A Study in Scarlet, the first 
+                                     of four novels and fifty-six short stories about Holmes and Dr. Watson. The Sherlock Holmes
+                                      stories are milestones in the field of crime fiction
+
+                                    Born: 22 May 1859, Edinburgh, United Kingdom
+Died: 7 July 1930, Crowborough, United Kingdom
+Short stories: The Adventure of the Speckled Band, MORE
+                                </p>
+                                <h3>ARTHUR CONAN DOYLE</h3>
+    
+                            </div>
+                        </div>
+                </div>
+
+            </section>
+     <script>
+         var navLinks=document.getElementById("navLinks");
+         function showMenu()
+         {
+             navLinks.style.right="0";
+         }
+         function hideMenu()
+         {
+             navLinks.style.right="-200px";
+         }
+     </script>
+
+ </body>
+</html>
