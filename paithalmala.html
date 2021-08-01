@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+
+    </head><meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="paithalmala.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="20210730_153504.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="authors.html">RECIPE</a></li>
+                    <li><a href="destination.html">DESTINATIONS</a></li>
+                </ul>
+               </div>
+
+               <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+            </nav>
+            
+        </section>
+    <body>
+        <div class="row">
+            <div class="col-1">
+                <h1>paithalmala</h1>
+                <p>
+                    Paithalmala is a hill station in the Kannur district of Kerala in India. Located near Pottenplave village, at a height of 1372 m above sea level, this is the highest geographic peak in Kannur.
+                     It is located at 40 km from Taliparamba and 65 km from Kannur<br>An invigorating 6 km trek, a trail interspersed with rare endemic species, waterfalls and a panoramic view of neighbouring Karnataka are some of the primary attractions of the magnificent hill station of Pythal Mala or Paithalmala in Kannur district. One of the highest peaks in Kannur, this enchanting hill station is located about 65 km from the main town and about 4,500 ft. above sea level. One must traverse a good distance to reach this quaint spot; but the payoff is immediate, as vouched by many a trekking aficionado.
+
+                     Monsoon and summer are considered to be the best time to explore the beauty of this hill station. Trekkers also can have a dip in the cool waters of Ezharakundu Waterfalls on the way.
+                     
+                     A secluded locale, it offers one the opportunity to soak in the splendour of Northern Kerala in peace
+                </p>
+                <ul>
+                    <li class="btn active" ></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <img src="pic1.jpg" id="banner">
+            </div>
+        </div>
+        <script>
+            var btn=document.getElementsByClassName("btn");
+            var banner=document.getElementById("banner");
+            btn[0].onclick=function(){
+                banner.src="pic1.jpg";
+                banner.classList.add("zoom");
+                setTimeout(function(){
+                    banner.classList.remove("zoom");
+                },500)
+            }
+            btn[1].onclick=function(){
+                banner.src="pic2.jpg";
+            }
+            btn[2].onclick=function(){
+                banner.src="pic3.jpg";
+            }
+            btn[3].onclick=function(){
+                banner.src="pic4.jpg";
+            }
+        </script>
+        <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+        
+
+</body>
+</html>
