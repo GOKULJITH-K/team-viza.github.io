@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+
+    </head><meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="paithalmala.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="20210730_153504.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="authors.html">RECIPE</a></li>
+                    <li><a href="destination.html">DESTINATIONS</a></li>
+                </ul>
+               </div>
+
+               <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+            </nav>
+            
+        </section>
+    <body>
+        <div class="row">
+            <div class="col-1">
+                <h1>lighthouse</h1>
+                <p>
+                    At a distance of 2 km from Kannur Railway Station, Kannur Lighthouse is a lighthouse situated near Payyambalam Beach in Kannur town of Kerala. Adjacent to the Sea View Park and the Government Guest House, it is the fourth largest lighthouse in Kerala and one of the popular Kannur Tourist Places.
+
+Also known as Cannanore Lighthouse, the lighthouse is still active and overlooks the Arabian Sea. In 1843, the British introduced a system of hoisting a lantern with an oil wick lamp in order to warn ships. A masonry pedestal was constructed in 1903 on the rampart of Kannur fort and placed a double wick oil lamp inside the 4th order dioptric lens and lantern on this pedestal. The light was made available during fair seasons only, from September to May every year. In 1939, the light was shifted on to a 16-metre steel trestle erected on the northern bastion of the fort. In 1948, the system was replaced by a flashing light which uses Dissolved Acetylene gas as fuel.
+ This light was functional till the present lighthouse was constructed at the present location in 1976.
+                </p>
+                <ul>
+                    <li class="btn active" ></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <img src="pic1.jpg" id="banner">
+            </div>
+        </div>
+        <script>
+            var btn=document.getElementsByClassName("btn");
+            var banner=document.getElementById("banner");
+            btn[0].onclick=function(){
+                banner.src="d1.jpg";
+                banner.classList.add("zoom");
+                setTimeout(function(){
+                    banner.classList.remove("zoom");
+                },500)
+            }
+            btn[1].onclick=function(){
+                banner.src="d2.jpg";
+            }
+            btn[2].onclick=function(){
+                banner.src="d3.webp";
+            }
+            btn[3].onclick=function(){
+                banner.src="d4.jpg";
+            }
+        </script>
+        <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+        
+
+</body>
+</html>

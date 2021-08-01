@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+
+    </head><meta name="viewport" content="width=device-width,initial-scale=1.0">
+         <title>travel diary</title>
+         <link rel="stylesheet" href="paithalmala.css">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> 
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="20210730_153504.png"></a>
+                <div class="nav-links" id="navLinks">
+                   <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="books.html">BOOKS</a></li>
+                    <li><a href="authors.html">RECIPE</a></li>
+                    <li><a href="destination.html">DESTINATIONS</a></li>
+                </ul>
+               </div>
+
+               <i class="bi bi-layout-text-sidebar" onclick="showMenu()"></i>
+
+            </nav>
+            
+        </section>
+    <body>
+        <div class="row">
+            <div class="col-1">
+                <h1>arakkal meusium</h1>
+               <p>
+                Arakkal Kettu was the palace of the erstwhile Arakkal Ali Rajas, the only Muslim royal family of Kerala. The palace is situated opposite the Ayikkara Moplah Bay, about three kilometers from Kannur town.
+
+                The Arakkal Rajas were prominent rulers of Kannur and the adjoining areas. They once ruled Malabar and the Lakshadweep islands as well. One remarkable thing about them was that when it came to ruling and administration, they showed no gender bias. They followed a matriarchal system of descent and permitted both male and female members to take over as the head of the family and of the state. While the male rulers were called Ali Rajas, the female rulers were known as Arakkal Beevis.
+                
+                The Arakkal family and their kingdom maintained good relationships with Hyder Ali and Tipu Sultan of Mysore. They also had a good rapport with the Dutch and the Sultan of Bijapur. But when the British conquered the Mysore kingdom during the last decade of the 18th century, the Arakkal family too had to surrender their land to the British.
+                
+                The palace of the Arakkal Rajas which used to be their administrative headquarters later became the office of the Collector of Malabar. Today, it is under the Departments of Archaeology and Tourism.
+                
+               </p>
+                <ul>
+                    <li class="btn active" ></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                    <li class="btn"></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <img src="b1.jpg" id="banner">
+            </div>
+        </div>
+        <script>
+            var btn=document.getElementsByClassName("btn");
+            var banner=document.getElementById("banner");
+            btn[0].onclick=function(){
+                banner.src="b1.jpg";
+                banner.classList.add("zoom");
+                setTimeout(function(){
+                    banner.classList.remove("zoom");
+                },500)
+            }
+            btn[1].onclick=function(){
+                banner.src="b2.jpg";
+            }
+            btn[2].onclick=function(){
+                banner.src="b3.jpg";
+            }
+            btn[3].onclick=function(){
+                banner.src="b4.jpg";
+            }
+        </script>
+        <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu()
+        {
+            navLinks.style.right="0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+
+        
+
+</body>
+</html>
