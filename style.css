@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
+    overflow-x: hidden;
     
 }
 .header{
@@ -90,11 +91,14 @@ nav .bi{
 
 }
 @media(max-width:720px){
+
+    overflow-x: hidden;
     .text-box h1{
         font-size: 20px;
     }
     .nav-links ul li{
         display: block;
+        
 
     }
     .nav-links{
